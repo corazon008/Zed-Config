@@ -1,0 +1,29 @@
+[
+  // python with uv
+  {
+    "label": "r/python",
+    "command": "uv run",
+    "args": ["\"$ZED_FILE\""],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true
+  },
+
+  // cpp with g++
+  {
+    "label": "r/cpp",
+    "command": "g++",
+    "args": ["\"$ZED_FILE\"", "&&", "./a.out"],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true
+  },
+
+
+  // c with gcc
+  {
+    "label": "r/c",
+    "command": "gcc",
+    "args": ["\"$ZED_FILE\"", "&&", "a.out"],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true
+  },
+]
