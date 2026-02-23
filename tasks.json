@@ -11,18 +11,17 @@
   // cpp with g++
   {
     "label": "r/cpp",
-    "command": "g++",
-    "args": ["\"$ZED_FILE\"", "&&", "./a.out"],
+    "command": "g++ -Wall -Wextra -Werror -o \"$ZED_DIRNAME\"/$ZED_STEM.out",
+    "args": ["\"$ZED_FILE\"", "&&", "\"$ZED_DIRNAME\"/$ZED_STEM.out"],
     "use_new_terminal": false,
     "allow_concurrent_runs": true
   },
-
-
+  
   // c with gcc
   {
     "label": "r/c",
-    "command": "gcc",
-    "args": ["\"$ZED_FILE\"", "&&", "a.out"],
+    "command": "gcc -Wall -Wextra -Werror -o \"$ZED_DIRNAME\"/$ZED_STEM.out",
+    "args": ["\"$ZED_FILE\"", "&&", "\"$ZED_DIRNAME\"/$ZED_STEM.out"],
     "use_new_terminal": false,
     "allow_concurrent_runs": true
   },
