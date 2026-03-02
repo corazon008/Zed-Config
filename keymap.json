@@ -50,7 +50,7 @@
   {
     "context": "Editor && extension == py",
     "bindings": {
-      "ctrl-shift-r": ["task::Spawn", { "task_name": "r/python" }],
+      "ctrl-r": ["task::Spawn", { "task_name": "r/python" }],
     },
   },
   {

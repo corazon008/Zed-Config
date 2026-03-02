@@ -16,11 +16,11 @@
     "use_new_terminal": false,
     "allow_concurrent_runs": true
   },
-  
+
   // c with gcc
   {
     "label": "r/c",
-    "command": "gcc -Wall -Wextra -Werror -o \"$ZED_DIRNAME\"/$ZED_STEM.out",
+    "command": "g++ -Wall -Wextra -Werror -o \"$ZED_DIRNAME\"/$ZED_STEM.out",
     "args": ["\"$ZED_FILE\"", "&&", "\"$ZED_DIRNAME\"/$ZED_STEM.out"],
     "use_new_terminal": false,
     "allow_concurrent_runs": true
